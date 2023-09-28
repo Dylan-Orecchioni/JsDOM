@@ -1,0 +1,68 @@
+label {
+    padding: 20px;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th, td {
+    border: 2px solid green;
+    padding: 8px;
+    text-align: center;
+}
+
+thead tr {
+    border-bottom: 2px solid green;
+}
+
+button {
+    margin: 10px;
+
+}
+
+h1 {
+    text-align: center;
+}
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: 500px ,100px;
+    gap: 60px;
+}
+
+.image {
+    display: grid;
+    grid-column: 1;
+    align-self: center;
+    justify-self: center;
+}
+
+.image .main-image {
+    max-width: 700px;
+    max-height: 500px;
+    border: solid 6px black;
+}
+
+.galerie {
+    display: grid;
+    grid-column: 2/3;
+    grid-template-columns: repeat(2, 100px);
+    gap: 10px;
+    justify-self: center;
+    align-self: center;
+}
+
+.galerie img {
+    width: 100px;
+    height: 100px;
+    border: solid 2px black;
+}
+
