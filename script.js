@@ -50,13 +50,18 @@
 
 // Exercice 4 - Affichez des photos de petite taille sur la zone de droite, lorsqu'une des photos est cliquée, elle s'affiche automatiquement en grand dans la zone de gauche. Vous pouvez ajouter la légende en passant par l'attribut "alt" de la balise "img" //
 
-// let image = document.querySelector('.main-image');
-// let littleImages = document.querySelectorAll('.petite-image');
-// console.log(image);
-// console.log(littleImages);
+let image = document.querySelector('.main-image');
+let littleImages = document.querySelectorAll('.petite-image');
+console.log(image);
+console.log(littleImages);
 
-// littleImages.forEach((littleImage) => {
-//     littleImage.addEventListener('click', (event) => {
-//         image.src = event.target.src;
-//     })    
-// })
+littleImages.forEach((littleImage) => {
+    littleImage.addEventListener('click', (event) => {
+        
+        document.querySelector('.petite-image.active').classList.remove('active');
+
+        event.target.classList.add('active');
+
+        image.src = event.target.src;
+    })    
+})

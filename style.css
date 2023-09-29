@@ -60,9 +60,15 @@ h1 {
     align-self: center;
 }
 
-.galerie img {
+.petite-image {
     width: 100px;
     height: 100px;
     border: solid 2px black;
 }
+.active {
+    width: 100px;
+    height: 100px;
+    border: solid 2px red;
+}
+
 
